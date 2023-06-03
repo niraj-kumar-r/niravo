@@ -44,6 +44,7 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
                         <RxCaretRight size={35} className="text-white" />
                     </button>
                 </div>
+
                 <div className="flex items-center md:hidden gap-x-2">
                     <button className="flex items-center justify-center p-2 transition bg-white rounded-full hover:opacity-75">
                         <HiHome className="text-black" size={20} />
@@ -52,6 +53,7 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
                         <BiSearch className="text-black" size={20} />
                     </button>
                 </div>
+
                 <div className="flex items-center justify-between gap-x-4">
                     <>
                         {/* fragment because of dynamic content*/}
@@ -74,6 +76,8 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
                     </>
                 </div>
             </div>
+
+            {children}
         </div>
     );
 };
