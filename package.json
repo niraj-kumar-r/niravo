@@ -6,7 +6,8 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "update-types": "npx supabase gen types typescript --project-id fkkjjjchmfjafbzaejee --schema public > types_db.ts"
     },
     "dependencies": {
         "@types/node": "20.2.5",
@@ -23,5 +24,8 @@
         "tailwind-merge": "^1.13.0",
         "tailwindcss": "3.3.2",
         "typescript": "5.1.3"
+    },
+    "devDependencies": {
+        "supabase": "^1.64.8"
     }
 }
